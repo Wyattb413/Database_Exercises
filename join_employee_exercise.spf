@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>employees</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>1482551275003144303</string>
+			<key>name</key>
+			<string>Vagrant Codeup MySQL</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>ssh_host</key>
+			<string>192.168.77.77</string>
+			<key>ssh_keyLocation</key>
+			<string></string>
+			<key>ssh_keyLocationEnabled</key>
+			<integer>0</integer>
+			<key>ssh_user</key>
+			<string>vagrant</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSSHTunnelConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>vagrant</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
+			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
+			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
+			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
+			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
+			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
+			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
+			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
+			AAAAAAAAAAAAAAABIw==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {600, 569}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT roles.name AS role_name, COUNT(*)
+FROM roles
+LEFT JOIN users ON roles.id = users.role_id
+GROUP BY role_name</string>
+		<string>SELECT roles.name AS role_name, users.name AS user_name, COUNT(*)
+FROM roles
+LEFT JOIN users ON roles.id = users.role_id
+GROUP BY role_name</string>
+		<string>SELECT roles.name AS role_name, users.name AS user_name, COUNT(*)
+FROM roles
+LEFT JOIN users ON roles.id = users.role_id
+GROUP BY user_name</string>
+		<string>SELECT roles.name AS role_name, users.name AS user_name, COUNT(*)
+FROM roles
+LEFT JOIN users ON roles.id = users.role_id</string>
+		<string>SELECT roles.name AS role_name, users.name AS user_name
+FROM roles
+LEFT JOIN users ON roles.id = users.role_id</string>
+		<string>SELECT roles.name AS role_name
+FROM roles
+LEFT JOIN users ON roles.id = users.role_id</string>
+		<string>SELECT roles.name AS role_name
+FROM roles
+RIGHT JOIN users ON roles.id = users.role_id</string>
+		<string>SELECT roles.name AS role_name
+FROM roles
+JOIN users ON roles.id = users.role_id</string>
+		<string>SELECT roles.name AS role_name
+FROM roles</string>
+		<string>SELECT roles.name AS role_name</string>
+		<string>SELECT users.name AS user_name, roles.name AS role_name
+FROM users
+LEFT JOIN roles ON users.role_id = roles.id
+GROUP BY user_name</string>
+		<string>SELECT users.name AS user_name, roles.name AS role_name
+FROM users
+LEFT JOIN roles ON users.role_id = roles.id</string>
+		<string>SELECT users.name AS user_name, roles.name AS role_name, COUNT(roles.name) AS number_of_roles
+FROM users
+LEFT JOIN roles ON users.role_id = roles.id
+GROUP BY user_name</string>
+		<string>SELECT users.name AS user_name, roles.name AS role_name, COUNT(roles.name) AS number_of_roles
+FROM users
+LEFT JOIN roles ON users.role_id = roles.id</string>
+		<string>SELECT users.name as user_name, roles.name as role_name
+FROM users
+LEFT JOIN roles ON users.role_id = roles.id</string>
+		<string>SELECT users.name as user_name, roles.name as role_name
+FROM users
+RIGHT JOIN roles ON users.role_id = roles.id</string>
+		<string>SELECT users.name as user_name, roles.name as role_name
+FROM users
+JOIN roles ON users.role_id = roles.id</string>
+		<string>SELECT * FROM users</string>
+		<string>INSERT INTO users (name, email, role_id) 
+VALUES 
+('sydnie', 'sydnie@example.com', 2),
+('teresa', 'teresa@example.com', 2),
+('pricilla', 'pricilla@example.com', 2),
+('sarah', 'sarah@example.com', null)</string>
+		<string>INSERT INTO users (name, email, rolde_id) 
+VALUES 
+('sydnie', 'sydnie@example.com', 2),
+('teresa', 'teresa@example.com', 2),
+('pricilla', 'pricilla@example.com', 2),
+('sarah', 'sarah@example.com', null)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.49-0ubuntu0.14.04.1-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

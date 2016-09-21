@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>employees</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>1482551275003144303</string>
+			<key>name</key>
+			<string>Vagrant Codeup MySQL</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>ssh_host</key>
+			<string>192.168.77.77</string>
+			<key>ssh_keyLocation</key>
+			<string></string>
+			<key>ssh_keyLocationEnabled</key>
+			<integer>0</integer>
+			<key>ssh_user</key>
+			<string>vagrant</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSSHTunnelConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>vagrant</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK8QEAcIFRYXGBkfICEoLTE1ODxVJG51
+			bGzTCQoLDBAUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OjDQ4P
+			gAKAA4AEoxESE4AFgAaACoAPVHR5cGVUcm93c1RrZXlzXxAmU2Vs
+			ZWN0aW9uRGV0YWlsVHlwZVByaW1hcnlLZXllZERldGFpbHPTCQoL
+			GhweoRuAB6EdgAiACWsAMQAxADEANgA5ADL/+ABkADAAMAA5CdIi
+			IyQlWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0
+			aW9uYXJ5oyQmJ1xOU0RpY3Rpb25hcnlYTlNPYmplY3TSCgspLKIq
+			K4ALgA2ADtILLi8wWU5TLnN0cmluZ4AMVmVtcF9ub9IiIzIzXxAP
+			TlNNdXRhYmxlU3RyaW5nozI0J1hOU1N0cmluZ9ILLi83gAxXZGVw
+			dF9ub9IiIzk6Xk5TTXV0YWJsZUFycmF5ozk7J1dOU0FycmF50iIj
+			Jj2iJidfEA9OU0tleWVkQXJjaGl2ZXLRQEFUZGF0YYABAAgAEQAa
+			ACMALQAyADcASgBQAFcAXwBqAHEAdQB3AHkAewB/AIEAgwCFAIcA
+			jACRAJYAvwDGAMgAygDMAM4A0ADnAOgA7QD4AQEBFwEbASgBMQE2
+			ATkBOwE9AT8BRAFOAVABVwFcAW4BcgF7AYABggGKAY8BngGiAaoB
+			rwGyAcQBxwHMAAAAAAAAAgEAAAAAAAAAQgAAAAAAAAAAAAAAAAAA
+			Ac4=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {600, 569}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>table</key>
+			<string>dept_manager</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>DESCRIBE albums</string>
+		<string>INSERT INTO albums
+(`artist`, `name`, `release_date`, `sales_in_millions`, `genre`)
+VALUES ('Peter Jackson', 'Thriller', '1982', 46000000, 'Pop, rock, R&amp;B' )</string>
+		<string>sales_in_millions</string>
+		<string>INSERT INTO albums
+('artist', 'name', 'release_date', 'sales_in_millions', 'genre')
+VALUES ('Peter Jackson', 'Thriller', '1982', 46000000, 'Pop, rock, R&amp;B' )</string>
+		<string>SELECT * FROM albums</string>
+		<string>ALTER TABLE albums
+ADD UNIQUE (artist, name)</string>
+		<string>ALTER TABLE albums
+ADD UNIQUE (artist)</string>
+		<string>ALTER TABLE albums
+DROP INDEX artist</string>
+		<string>ALTER TABLE albums
+DROP INDEX (artist)</string>
+		<string>UNIQUE (artist, name)</string>
+		<string>ALTER TABLE albums
+UNIQUE (artist, name)</string>
+		<string>DESCRIBE titles</string>
+		<string>DESCRIBE salaries</string>
+		<string>DESCRIBE employees</string>
+		<string>DESCRIBE dept_manager</string>
+		<string>DESCRIBE dept_emp</string>
+		<string>DESCRIBE dept-emp</string>
+		<string>DESCRIBE departments</string>
+		<string>SELECT CONCAT(emp_no, ' - ', last_name, ', ', first_name) AS first_name, birth_date AS DOB FROM employees
+LIMIT 10</string>
+		<string>SELECT CONCAT(emp_no, ' ', last_name, ', ', first_name) AS first_name, birth_date AS DOB FROM employees
+LIMIT 10</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.49-0ubuntu0.14.04.1-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

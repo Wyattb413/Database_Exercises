@@ -18,7 +18,7 @@ ORDER BY emp_no DESC;
 SELECT * FROM employees WHERE last_name LIKE 'E%e'
 ORDER BY emp_no DESC;
 SELECT * FROM employees WHERE hire_date LIKE '199%' AND birth_date LIKE '%-12-25'
-ORDER BY birth_date DESC, hire_date DESC;
+ORDER BY birth_date ASC, hire_date DESC;
 SELECT * FROM employees WHERE last_name LIKE '%q%' AND NOT last_name LIKE '%qu%';
 
 

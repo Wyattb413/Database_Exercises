@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>parks_db</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>1482551275003144303</string>
+			<key>name</key>
+			<string>Vagrant Codeup MySQL</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>ssh_host</key>
+			<string>192.168.77.77</string>
+			<key>ssh_keyLocation</key>
+			<string></string>
+			<key>ssh_keyLocationEnabled</key>
+			<integer>0</integer>
+			<key>ssh_user</key>
+			<string>vagrant</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSSHTunnelConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>vagrant</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClJpZNIeHy0uXxAPTlNN
+			dXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5TTXV0YWJs
+			ZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tleWVkQXJj
+			aGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBLAFIAWgBl
+			AGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDFAMoA
+			1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEtATIBRAFIAVEBVgFl
+			AWkBcQF2AXkBiwGOAZMAAAAAAAACAQAAAAAAAAA6AAAAAAAAAAAA
+			AAAAAAABlQ==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {600, 568}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>SELECT * FROM national_parks LIMIT 4 OFFSET 0;
+
+SELECT COUNT(*) FROM national_parks;</string>
+			<key>table</key>
+			<string>national_parks</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT * FROM national_parks LIMIT 4 OFFSET 4</string>
+		<string>SELECT COUNT(*) FROM national_parks-&gt;fetchColumn()</string>
+		<string>SELECT COUNT(*) FROM national_parks</string>
+		<string>SELECT * FROM national_parks LIMIT 4 OFFSET 0</string>
+		<string>SELECT * FROM national_parks LIMIT 4 OFFSET 2</string>
+		<string>SELECT * FROM national_parks LIMIT 4 OFFSET 3</string>
+		<string>SELECT * FROM national_parks LIMIT 4 OFFSET 10</string>
+		<string>SELECT * FROM national_parks</string>
+		<string>-- All department names that have female managers USING JOINS
+SELECT DISTINCT d.dept_name, e.gender
+FROM departments AS d
+JOIN dept_manager AS dm
+	ON dm.dept_no = d.dept_no
+JOIN employees as e
+	ON e.emp_no = dm.emp_no
+WHERE e.gender = 'F'
+AND to_date = '9999-01-01'</string>
+		<string>-- All department names that have female managers USING SUBQUERIES
+SELECT dept_name AS 'Department Name'
+FROM departments
+WHERE dept_no IN (
+	SELECT dept_no
+	FROM dept_manager
+	WHERE emp_no IN (
+		SELECT emp_no
+		FROM employees
+		WHERE gender = 'F'
+		AND to_date = '9999-01-01'
+	)
+)</string>
+		<string>-- All department names that have female managers USING SUBQUERIES
+SELECT dept_name AS 'Department Name'
+FROM departments
+WHERE dept_no IN (
+	SELECT dept_no
+	FROM dept_manager
+	WHERE emp_no IN (
+		SELECT emp_no
+		FROM employees
+		WHERE gender = 'F'
+	)
+)</string>
+		<string>-- Find all department managers that are female
+SELECT dm.emp_no, CONCAT(e.first_name, ' ', e.last_name) AS 'Full Name', e.gender
+FROM dept_manager AS dm
+JOIN employees AS e
+	ON dm.emp_no = e.emp_no
+WHERE dm.emp_no IN (
+	SELECT emp_no
+	FROM employees
+	WHERE gender = 'F'
+)
+AND to_date = '9999-01-01'</string>
+		<string>-- Find all department managers that are female
+SELECT dm.emp_no, CONCAT(e.first_name, ' ', e.last_name) AS 'Full Name', e.gender
+FROM dept_manager AS dm
+JOIN employees AS e
+	ON dm.emp_no = e.emp_no
+WHERE dm.emp_no IN (
+	SELECT emp_no
+	FROM employees
+	WHERE gender = 'F'
+)</string>
+		<string>-- All department names that have female managers USING JOINS
+SELECT DISTINCT d.dept_name, e.gender
+FROM departments AS d
+JOIN dept_manager AS dm
+	ON dm.dept_no = d.dept_no
+JOIN employees as e
+	ON e.emp_no = dm.emp_no
+WHERE e.gender = 'F'</string>
+		<string>-- All department names that have female managers USING JOINS
+SELECT d.dept_name, e.gender
+FROM departments AS d
+JOIN dept_manager AS dm
+	ON dm.dept_no = d.dept_no
+JOIN employees as e
+	ON e.emp_no = dm.emp_no
+WHERE e.gender = 'F'</string>
+		<string>-- All department names that have female managers USING JOINS
+SELECT d.dept_name
+FROM departments AS d
+JOIN dept_manager AS dm
+	ON dm.dept_no = d.dept_no
+JOIN employees as e
+	ON e.emp_no = dm.emp_no
+WHERE e.gender = 'F'</string>
+		<string>-- All department names that have female managers USING JOINS
+SELECT d.dept_name
+FROM departments AS d
+JOIN dept_manager AS dm
+	ON dm.dept_no = d.dept_no</string>
+		<string>-- All department names that have female managers USING JOINS
+SELECT dept_name
+FROM departments</string>
+		<string>-- All department names that have female managers
+SELECT dept_name AS 'Department Name'
+FROM departments
+WHERE dept_no IN (
+	SELECT dept_no
+	FROM dept_manager
+	WHERE emp_no IN (
+		SELECT emp_no
+		FROM employees
+		WHERE gender = 'F'
+	)
+)</string>
+		<string>-- All department names that female managers
+SELECT dept_name AS 'Department Name'
+FROM departments</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.49-0ubuntu0.14.04.1-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
